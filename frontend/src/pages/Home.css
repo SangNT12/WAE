@@ -1,0 +1,21 @@
+/* Home Page Styles */
+
+.home {
+  background-color: #ffffff;
+}
+
+/* Loading and Error States */
+.home.loading,
+.home.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: 18px;
+  color: rgb(51, 52, 63);
+  font-family: "lato", sans-serif;
+}
+
+.home.error {
+  color: #dc3545;
+}

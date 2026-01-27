@@ -1,0 +1,70 @@
+/* Contributions Section */
+.contributions-section {
+  padding: 100px 40px;
+  background-color: #fafafa;
+}
+
+.contribution {
+  margin-bottom: 100px;
+}
+
+.contribution-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(51, 52, 63);
+  margin-bottom: 20px;
+  font-family: "lato", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.contribution-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgb(51, 52, 63);
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.inline-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.inline-link:hover {
+  color: #0056b3;
+}
+
+.contribution-image-wrapper {
+  margin-top: 30px;
+}
+
+.contribution-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  margin-top: 0;
+  box-shadow: none;
+  display: block;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: rgb(80, 81, 92);
+  font-style: italic;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contributions-section {
+    padding: 60px 20px;
+  }
+
+  .contribution-title {
+    font-size: 20px;
+  }
+}

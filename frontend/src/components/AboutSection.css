@@ -1,0 +1,69 @@
+/* About Section */
+.about-section {
+  padding: 120px 40px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 300;
+  color: rgb(51, 52, 63);
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(51, 52, 63);
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "lato-light", "lato", sans-serif;
+}
+
+.about-quote {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(51, 52, 63);
+  border-left: none;
+  padding-left: 0;
+  margin-top: 50px;
+  font-style: normal;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-family: "lato-light", "lato", sans-serif;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
