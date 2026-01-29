@@ -85,6 +85,38 @@ export const apiService = {
     }
   },
 
+  // Toolchain endpoints
+  getToolchain: async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/toolchain`);
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching toolchain:", error);
+      throw error;
+    }
+  },
+
+  getTool: async (label) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/toolchain/${label}`);
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching tool:", error);
+      throw error;
+    }
+  },
+
+  // Use Cases endpoints
+  getUseCases: async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/use-cases`);
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching use cases:", error);
+      throw error;
+    }
+  },
+
   // Health check
   checkHealth: async () => {
     try {

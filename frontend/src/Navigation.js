@@ -36,6 +36,8 @@ function Navigation({ onNavigate }) {
     
     // If it's an internal navigation, use the onNavigate callback
     if (url.startsWith("/") && !url.startsWith("http")) {
+      // Update the browser URL
+      window.history.pushState({ page: pageName }, "", url);
       onNavigate(pageName);
     } else {
       // For external links, open in new tab

@@ -19,7 +19,7 @@ function TargetPictureSection({ targetPicture }) {
             {targetPicture.description}
           </p>
           <div className="target-text">
-            {targetPicture.details.map((detail, index) => (
+            {targetPicture.details && Array.isArray(targetPicture.details) && targetPicture.details.map((detail, index) => (
               <p key={index} className={index === targetPicture.details.length - 1 ? "target-quote" : "target-detail"}>
                 {detail}
               </p>

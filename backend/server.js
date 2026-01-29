@@ -22,6 +22,7 @@ app.use('/api/navigation', require('./routes/navigation'));
 app.use('/api/content', require('./routes/content'));
 app.use('/api/partners', require('./routes/partners'));
 app.use('/api/use-cases', require('./routes/useCases'));
+app.use('/api/toolchain', require('./routes/toolchain'));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
