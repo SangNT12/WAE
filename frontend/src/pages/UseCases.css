@@ -1,0 +1,342 @@
+/* Use Cases Page Styles */
+.use-cases-page {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.use-cases-loading,
+.use-cases-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 18px;
+  color: #666;
+}
+
+.use-cases-error {
+  color: #d9534f;
+}
+
+/* Header Section */
+.use-cases-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.use-cases-header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.use-cases-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.use-cases-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Practice Section */
+.use-cases-practice {
+  padding: 60px 20px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.use-cases-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.practice-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 30px 0;
+  letter-spacing: -0.5px;
+}
+
+.practice-content {
+  line-height: 1.8;
+}
+
+.practice-description {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+.practice-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 30px 0 15px 0;
+}
+
+.practice-characteristics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.practice-characteristics li {
+  padding: 12px 0 12px 25px;
+  position: relative;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.practice-characteristics li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.practice-conclusion {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  margin: 20px 0 0 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #667eea;
+}
+
+/* Examples Section */
+.use-cases-examples {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.examples-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 40px 0;
+  letter-spacing: -0.5px;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .examples-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.example-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.example-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.example-content {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.example-details {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.example-detail {
+  margin-bottom: 20px;
+}
+
+.example-detail strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.example-detail p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.example-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #667eea;
+}
+
+.link-button:hover {
+  background-color: #764ba2;
+  border-color: #764ba2;
+}
+
+/* CTA Section */
+.use-cases-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.cta-description {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid white;
+}
+
+.cta-button.primary {
+  background-color: white;
+  color: #667eea;
+}
+
+.cta-button.primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-button.secondary:hover {
+  background-color: white;
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .use-cases-title {
+    font-size: 32px;
+  }
+
+  .use-cases-subtitle {
+    font-size: 18px;
+  }
+
+  .practice-title,
+  .examples-title,
+  .cta-title {
+    font-size: 24px;
+  }
+
+  .example-title {
+    font-size: 20px;
+  }
+
+  .example-links {
+    gap: 8px;
+  }
+
+  .link-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .cta-links {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}

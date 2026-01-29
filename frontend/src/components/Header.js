@@ -2,16 +2,19 @@ import React from "react";
 import "./Header.css";
 import Navigation from "../Navigation";
 
-function Header() {
+function Header({ onNavigate }) {
   const handleLogoClick = () => {
-    window.location.href = "http://localhost:3000";
+    onNavigate("home");
   };
 
   return (
     <header className="app-header">
       <a
-        href="http://localhost:3000"
-        target="_self"
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          handleLogoClick();
+        }}
         rel="noopener noreferrer"
         className="logo-link"
       >
@@ -21,10 +24,10 @@ function Header() {
           className="logo-img"
         />
       </a>
-      <h1 className="logo-text" onClick={handleLogoClick}>
+      <h1 className="logo-text" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
         digital.auto
       </h1>
-      <Navigation />
+      <Navigation onNavigate={onNavigate} />
     </header>
   );
 }
